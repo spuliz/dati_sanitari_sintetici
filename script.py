@@ -23,11 +23,11 @@ def generate_patient_data():
     model="gpt-4-0613",
     messages=[
         {"role": "system", "content": "You are a helpful assistant. This is an example of Italian CDA health record for a random patient. Example:{template}"},
-        {"role": "user", "content": "Generate a new CDA record in XML, for a new Italian patient. Be creative add many details and populare always with many new details and information about the clinical history. Do not add any additional comment, provide only the answer in XML. Answer in Italian"},
+        {"role": "user", "content": "Generate a new realistic CDA record in XML, for a new Italian patient. Be creative add many details and populate always with many new details and information about the clinical history. Do not add any additional comment, provide only the answer in XML. Answer in Italian"},
         {"role": "assistant", "content": "Risposta:"},
     ]
     )
-    print(response)
+    # print(response)
     return response.choices[0].message.content
 
 def remove_first_last_line(xml_content):
