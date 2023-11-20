@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<ClinicalDocument xmlns="urn:hl7-org:v3"> 
+
+    <!-- Header Information --> 
+
+    <realmCode code="IT"/> 
+
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/> 
+
+    <id root="98765432" extension="WXYZ1234"/> 
+
+    <code code="34133-9" displayName="Riassunto della nota dell'episodio" codeSystem="2.16.840.1.113883.6.1"/> 
+
+    <title>Cartella Clinica di Giovanni Bianchi</title> 
+
+    <effectiveTime value="20231102"/> 
+
+    <confidentialityCode code="N" displayName="Normale" codeSystem="2.16.840.1.113883.5.25"/> 
+
+    <languageCode code="it-IT"/> 
+
+     
+
+    <!-- Patient Information --> 
+
+    <recordTarget> 
+
+        <patientRole> 
+
+            <id root="2.34.5.67.8.90" extension="1234567890"/> 
+
+            <addr> 
+
+                <streetAddressLine>Via Roma 123</streetAddressLine> 
+
+                <city>Roma</city> 
+
+                <state>RM</state> 
+
+                <postalCode>00100</postalCode> 
+
+            </addr> 
+
+            <telecom value="tel:+39-06-12345678"/> 
+
+            <patient> 
+
+                <name> 
+
+                    <given>Giovanni</given> 
+
+                    <family>Bianchi</family> 
+
+                </name> 
+
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/> 
+
+                <birthTime value="19750101"/> 
+
+            </patient> 
+
+        </patientRole> 
+
+    </recordTarget> 
+
+     
+
+    <!-- Provider Information --> 
+
+    <author> 
+
+        <time value="20231101"/> 
+
+        <assignedAuthor> 
+
+            <id root="2.16.840.1.113883.19.5" extension="7654321"/> 
+
+            <assignedPerson> 
+
+                <name>Dr. Maria Rossi</name> 
+
+            </assignedPerson> 
+
+        </assignedAuthor> 
+
+    </author> 
+
+     
+
+    <!-- Main Content Body --> 
+
+    <component> 
+
+        <structuredBody> 
+
+            <!-- Allergies Section --> 
+
+            <component> 
+
+                <section> 
+
+                    <title>Allergie</title> 
+
+                    <text> 
+
+                        Allergico alla penicillina. 
+
+                    </text> 
+
+                </section> 
+
+            </component> 
+
+            <!-- Medications Section --> 
+
+            <component> 
+
+                <section> 
+
+                    <title>Medicazioni</title> 
+
+                    <text> 
+
+                        Aspirina 100mg al bisogno. Ramipril 5mg ogni giorno. 
+
+                    </text> 
+
+                </section> 
+
+            </component> 
+
+            <!-- Lab Results Section --> 
+
+            <component> 
+
+                <section> 
+
+                    <title>Risultati del laboratorio</title> 
+
+                    <text> 
+
+                        Glicemia: 110 mg/dL. Colesterolo totale: 190 mg/dL. 
+
+                    </text> 
+
+                </section> 
+
+            </component> 
+
+            <!-- Diagnoses Section --> 
+
+            <component> 
+
+                <section> 
+
+                    <title>Diagnosi</title> 
+
+                    <text> 
+
+                        Ipertensione arteriosa. Cefalea tensionale. 
+
+                    </text> 
+
+                </section> 
+
+            </component> 
+
+        </structuredBody> 
+
+    </component> 
+
+</ClinicalDocument> 
+
+ 

@@ -1,0 +1,73 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="urn:hl7-org:v3 ..\sdschemas\datatypes\datatypes.xsd">
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+    <id root="2.16.840.1.113883.3.5681.11.2.123456789" />
+    <code code="11488-4" />
+    <title>Fascicolo Sanitario Elettronico</title>
+    <effectiveTime value="20200525" />
+    <confidentialityCode code="N" displayName="Normale" codeSystem="2.16.840.1.113883.5.25" />
+    <languageCode code="it-IT" />
+
+    <!-- Informazioni sul paziente -->
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.19.5" extension="12345" />
+            <patient>
+                <name>
+                    <given>Giuseppe</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+                <birthTime value="19800520" />
+                <maritalStatusCode code="M" codeSystem="2.16.840.1.113883.5.2" />
+                <ethnicGroupCode code="ITA" codeSystem="2.16.840.1.113883.6.238" />
+            </patient>
+        </patientRole>
+    </recordTarget>
+
+    <!-- Informazioni sulla storia clinica -->
+    <component>
+        <structuredBody>
+            <!-- Sezione sulla storia delle malattie -->
+            <component>
+                <section>
+                    <title>Storia delle malattie</title>
+                    <text>
+                        <list>
+                            <item>Ipotensione arteriosa - 2010</item>
+                            <item>Diabetico - 2015</item>
+                            <item>Ipertensione arteriosa - 2020</item>
+                        </list>
+                    </text>
+                </section>
+            </component>
+            <!-- Sezione sui farmaci prescritti -->
+            <component>
+                <section>
+                    <title>Farmaci prescritti</title>
+                    <text>
+                        <list>
+                            <item>Metformina 500mg - 2 volte al giorno</item>
+                            <item>Losartan 50mg - 1 volta al giorno</item>
+                            <item>Amlodipina 5mg - 1 volta al giorno</item>
+                        </list>
+                    </text>
+                </section>
+            </component>
+            <!-- Sezione sui risultati di laboratorio -->
+            <component>
+                <section>
+                    <title>Risultati di laboratorio</title>
+                    <text>
+                        <list>
+                            <item>Emoglobina A1c - 7%</item>
+                            <item>Colesterolo totale - 200 mg/dL</item>
+                            <item>Pressione arteriosa - 140/90 mmHg</item>
+                        </list>
+                    </text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

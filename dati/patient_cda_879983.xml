@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:hl7-org:v3">
+    <realmCode code="IT"/>
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+    <id root="2.16.840.1.113883.3.57.1.5.1" extension="12345"/>
+    <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" displayName="Summary of episode note"/>
+    <title>Paziente Nuovo CDA Documento</title>
+    <effectiveTime value="20211020"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="it-IT"/>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.3.57.1" extension="7890"/>
+            <addr use="H">
+                <streetAddressLine>Via Roma 20</streetAddressLine>
+                <city>Roma</city>
+                <state>IT</state>
+                <postalCode>00123</postalCode>
+            </addr>
+            <patient>
+                <name>
+                    <given>Mario</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19800101"/>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <componentOf>
+        <encompassingEncounter>
+            <effectiveTime>
+                <low value="20211020"/>
+                <high value="20220101"/>
+            </effectiveTime>
+            <dischargeDispositionCode code="01" codeSystem="2.16.840.1.113883.12.112"/>
+            <responsibleParty>
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.3.57.1.5.1" extension="6789"/>
+                    <assignedPerson>
+                        <name>
+                            <given>Dr.</given>
+                            <family>Bianchi</family>
+                        </name>
+                    </assignedPerson>
+                </assignedEntity>
+            </responsibleParty>
+        </encompassingEncounter>
+    </componentOf>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <title>Esame Fisico</title>
+                    <text>Nessun problema fisico evidente.</text>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <title>Problemi Attuali</title>
+                    <text>Nessun problema attuale.</text>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <title>Storia Medica</title>
+                    <text>Nessuna storia medica significativa.</text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
