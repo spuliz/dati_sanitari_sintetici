@@ -14,16 +14,19 @@ Per configurare questo progetto, seguire questi passaggi:
 1. **Clonare il Repository**
    ```bash
    git clone [https://github.com/spuliz/dati_sanitari_sintetici.git]
- ```
-2. **Creare un Ambiente Virtuale** (Opzionale ma consigliato)
+ ```  ```
+
+2. **Creare un Ambiente Virtuale**
+
    ```bash
    python -m venv venv
-   source venv/bin/activate  # Per Windows: .\venv\Scripts\activate
- ```
- **Installare le dipendenze** (Opzionale ma consigliato)
+   source venv/bin/activate
+   ``` ```
+
+3. **Installare le dipendenze** 
    ```bash
    pip install -r requirements.txt
- ```
+ ```  ```
 ## Utilizzo
 Per generare e salvare dati CDA fittizi di pazienti:
 
@@ -33,7 +36,7 @@ Per generare e salvare dati CDA fittizi di pazienti:
 
    ```bash
    python script.py
- ```
+ ``` ```
 3. **Struttura delle cartelle**
 ```bash
 ├── dati/ # Cartella dove i file XML generati vengono salvati
