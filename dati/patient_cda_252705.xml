@@ -1,0 +1,65 @@
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <id root="2.16.840.1.113883.3.5678" extension="1234567"/>
+    <code code="34133-9" displayName="History and Physical" codeSystem="2.16.840.1.113883.6.1"/>
+    <title>Storia clinica del paziente</title>
+    <effectiveTime value="20220322"/>
+    <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="IT-it"/>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.3.5678" extension="89898989"/>
+            <patient>
+                <name>
+                    <given>Giovanni</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19751216"/>
+            </patient>
+            <providerOrganization>
+                <id root="2.16.840.1.113883.3.5678"/>
+                <name>Ospedale generale di Santa Maria</name>
+            </providerOrganization>
+        </patientRole>
+    </recordTarget>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <title>Storia medica</title>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="2951-3" displayName="Pneumonia diagnosis" codeSystem="2.16.840.1.113883.6.1"/>
+                            <value xsi:type="CD" code="486" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96"/>
+                        </observation>
+                    </entry>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="4418-3" displayName="Diabetes Diagnosis" codeSystem="2.16.840.1.113883.6.1"/>
+                            <value xsi:type="CD" code="250.00" displayName="Diabetes mellitus" codeSystem="2.16.840.1.113883.6.96"/>
+                        </observation>
+                    </entry>
+                </section>
+                <section>
+                    <title>Trattamenti</title>
+                    <entry>
+                        <act classCode="ACT" moodCode="RQO">
+                            <code code="42349-1" displayName="Prescription of antibiotics" codeSystem="2.16.840.1.113883.6.1"/>
+                            <text> Prescrizione di antibiotici per trattare la polmonite</text>
+                        </act>
+                    </entry>
+                    <entry>
+                        <act classCode="ACT" moodCode="RQO">
+                            <code code="30777-5" displayName="Prescription of diabetes medication" codeSystem="2.16.840.1.113883.6.1"/>
+                            <text> Prescrizione di farmaci per il diabete</text>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
