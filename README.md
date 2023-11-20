@@ -1,7 +1,7 @@
 # Generatore di Dati CDA di Pazienti Fittizi
 
 ## Panoramica
-Questo progetto è progettato per generare e salvare dati fittizi del Clinical Document Architecture (CDA) di pazienti, utilizzando l'API GPT-4 di OpenAI. Include funzionalità per elaborare e formattare i dati in XML e salvarli con nomi di file unici in una directory specificata.
+Questo repository è progettato per generare e salvare dati fittizi del Clinical Document Architecture (CDA) di pazienti, utilizzando l'API GPT-4 di OpenAI. Include funzionalità per elaborare e formattare i dati in XML e salvarli con nomi di file unici in una directory specificata.
 
 ## Funzionalità
 - **Generazione dei Dati**: Utilizza l'API GPT-4 di OpenAI per creare dati CDA di pazienti realistici ma fittizi.
