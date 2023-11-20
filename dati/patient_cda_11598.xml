@@ -1,0 +1,59 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:voc="urn:hl7-org:v3/voc" xmlns:sdtc="urn:hl7-org:sdtc">
+   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+   <id root="1.2.840.113619075792.3.239875.2.1.34"/>
+   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Continuity of Care Document"/>
+   <title>Documento di Continuità delle Cure per Mario Rossi</title>
+   <effectiveTime value="20220628000000"/>
+   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+   <languageCode code="it"/>
+   <recordTarget>
+      <patientRole>
+         <id root="2.16.840.1.113883.19.5" extension="12345"/>
+         <patient>
+            <name>
+               <given>Mario</given>
+               <family>Rossi</family>
+            </name>
+            <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Maschio"/>
+            <birthTime value="19650501"/>
+         </patient>
+         <providerOrganization>
+            <id root="2.16.840.1.113883.19.5" extension="67890"/>
+            <name>Ospedale San Matteo, Pavia</name>
+         </providerOrganization>
+      </patientRole>
+   </recordTarget>
+   <component>
+      <structuredBody>
+         <component>
+            <section>
+               <title>Anamnesi</title>
+               <text>Paziente con storico di ipertensione e diabete</text>
+            </section>
+         </component>
+         <component>
+            <section>
+               <title>Terapie correnti</title>
+               <text>Paziente su Metformina 1000mg due volte al giorno e Losartan 50mg una volta al giorno</text>
+            </section>
+         </component>
+         <component>
+            <section>
+               <title>Allergologie</title>
+               <entry>
+                  <act classCode="ACT" moodCode="EVN">
+                     <code code="ALG" codeSystem="2.16.840.1.113883.5.4" displayName="Allergia"></code>
+                     <text>Paziente allergico alla Penicillina</text>
+                  </act>
+               </entry>
+            </section>
+         </component>
+         <component>
+            <section>
+               <title>Esami di laboratorio</title>
+               <text>Paziente con livelli elevati di glucosio nel sangue e pressione arteriosa elevata</text>
+            </section>
+         </component>
+      </structuredBody>
+   </component>
+</ClinicalDocument>

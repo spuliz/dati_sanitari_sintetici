@@ -1,0 +1,49 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+  <realmCode code="IT"/>
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <id root="987654321"/>
+  <code code="34133-9" displayName="Rapporto sulla storia clinica" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>Storia Clinica dell'Paziente</title>
+  <effectiveTime value="20210420"/>
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.19.5" extension="12345"/>
+      <patient>
+        <name>
+          <given>Mario</given>
+          <family>Rossi</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19801215"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <title>Informazioni di somministrazione del farmaco</title>
+          <text>Il paziente assume regolarmente la Cardiopirina 100mg.</text>
+          <entry>
+            <substanceAdministration>
+              <text>Cardiopirina 100mg</text>
+              <effectiveTime value="20210420"/>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <title>Risultati dei test di laboratorio</title>
+          <text>Il paziente ha eseguito un completo esame del sangue il 15 aprile 2021. I risultati erano tutti nei limiti normali.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <title>Storia della malattia</title>
+          <text>Il paziente è stato recentemente diagnosticato con diabete di tipo 2. Si trova al momento sotto controllo medico per la gestione della sua condizione.</text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
