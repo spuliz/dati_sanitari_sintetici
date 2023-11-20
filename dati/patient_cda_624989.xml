@@ -1,0 +1,59 @@
+```XML
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+    <header>
+        <realmCode code="IT"/>
+        <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+        <id root="2.16.840.1.113883.19.5" extension="12345"/>
+        <code code="34133-9" displayName="Storia Clinica" codeSystem="2.16.840.1.113883.6.1"/>
+        <title>Documentazione Clinica per il paziente Mario Rossi</title>
+        <effectiveTime value="20220301"/>
+        <confidentialityCode code="N" />
+        <languageCode code="it-IT"/>
+        <setId root="2.16.840.1.113883.19.5" extension="12345"/>
+        <versionNumber value="1"/>
+    </header>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.3.42.10001.100001.12" extension="MRN12345"/>
+            <addr>
+                <streetAddressLine>Via Roma, 100</streetAddressLine>
+                <city>Roma</city>
+                <state>RM</state>
+                <postalCode>00100</postalCode>
+            </addr>
+            <patient>
+                <name>
+                    <given>Mario</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M"/>
+                <birthTime value="19750520"/>
+            </patient>
+            <providerOrganization>
+                <name>Ospedale di Roma</name>
+            </providerOrganization>
+        </patientRole>
+    </recordTarget>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <code code="10157-6" displayName="Storia delle malattie passate" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>Il paziente è stato precedentemente diagnosticato con ipertensione e diabete di tipo 2.</text>
+                </section>
+                <section>
+                    <code code="11450-4" displayName="Storia delle procedure passate" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>Il paziente ha subito un intervento chirurgico per appendicite nel 1998.</text>
+                </section>
+                <section>
+                    <code code="11369-6" displayName="Storia dei farmaci passati" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>Il paziente è stato trattato con Lisinopril 20mg al giorno per l'ipertensione. Inoltre, assume Metformina 1000mg due volte al giorno per il diabete.</text>
+                </section>
+                <section>
+                    <code code="10160-0" displayName="Problemi di salute attuali" codeSystem="2.16.840.1.113883.6.1"/>
+                    <text>Il paziente presenta attualmente problemi cardiovascolari e mancanza di respiro. Stiamo esplorando ulteriori indagini per confermare se si tratta di malattia cardiaca ischemica.</text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

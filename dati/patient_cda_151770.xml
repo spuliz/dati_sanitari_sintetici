@@ -1,0 +1,71 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+    <realmCode code="IT"/>
+    <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+    <id root="1.2.840.114350" extension="1234567890"/>
+    <code code="11488-4" displayName="Consultazione" codeSystemName="LOINC"/>
+    <title>Registro Clinico Elettronico del Paziente</title>
+    <effectiveTime value="202202011230"/>
+    <confidentialityCode code="N" displayName="Normale" codeSystemName="HL7"/>
+    <languageCode code="it-IT"/>
+    <recordTarget>
+        <patientRole>
+            <id root="1.2.840.114350" extension="0987654321"/>
+            <addr>
+                <streetAddressLine>Via Roma 23</streetAddressLine>
+                <city>Milano</city>
+                <state>MI</state>
+                <postalCode>20100</postalCode>
+            </addr>
+            <telecom value="tel:+39 02 1234567"/>
+            <patient>
+                <name>
+                    <given>Marco</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystemName="HL7"/>
+                <birthTime value="19821230"/>
+                <maritalStatusCode code="M" displayName="Sposato" codeSystemName="HL7"/>
+                <religiousAffiliationCode code="RC" displayName="Cattolica Romana" codeSystemName="HL7"/>
+                <raceCode code="2106-3" displayName="Caucasico" codeSystemName="CDC"/>
+                <ethnicGroupCode code="2186-5" displayName="Non Iscritto" codeSystemName="CDC"/>
+                <guardian>
+                    <code code="PRN" displayName="Genitore" codeSystemName="HL7"/>
+                    <telecom value="tel:+39 02 9876543"/>
+                    <guardianPerson>
+                        <name>
+                            <given>Anna</given>
+                            <family>Bianchi</family>
+                        </name>
+                    </guardianPerson>
+                </guardian>
+            </patient>
+            <providerOrganization>
+                <id root="1.2.840.114350" extension="5678901234"/>
+                <name>Ospedale Generale di Milano</name>
+                <telecom value="tel:+39 02 12349000"/>
+            </providerOrganization>
+            </patientRole>
+    </recordTarget>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <title>Storia Clinica</title>
+                    <text>Il Sig. Rossi è stato precedentemente diagnosticato con ipertensione e diabete di tipo 2. Attualmente in terapia con Metformina 500mg due volte al giorno e Ramipril 2.5mg una volta al giorno.</text>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <title>Esami del Sangue</title>
+                    <text>Ultimi esami del sangue del sig. Rossi mostrano una glicemia a digiuno di 120 mg/dL e una pressione sanguigna di 130/80 mmHg.</text>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <title>Prescrizioni</title>
+                    <text>Il Sig. Rossi è stato prescritto con Metformina 500mg due volte al giorno e Ramipril 2.5mg una volta al giorno per i prossimi 3 mesi.</text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

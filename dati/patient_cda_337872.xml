@@ -1,0 +1,58 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+ <realmCode code="IT"/>
+ <typeId/>
+ <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+ <id root="2.16.840.1.113883.19.4" extension="123456789"/>
+ <code code="34133-9" displayName="CONSULTAZIONE" codeSystem="2.16.840.1.113883.6.1"/>
+ <title>Record Sanitario Elettronico del Paziente</title>
+ <effectiveTime value="20231013103022+0500"/>
+ <recordTarget>
+  <patientRole>
+   <id root="2.16.840.1.113883.3.88.12" extension="99999999"/>
+   <addr use="H">
+    <streetNamePartType>Via Roma</streetNamePartType>
+    <houseNumber>10</houseNumber>
+    <city>Roma</city>
+    <state>RM</state>
+    <zip>00100</zip>
+   </addr>
+   <phoneNumber nullFlavor="NI" />
+   <patient>
+    <name>
+     <given>Mario</given>
+     <family>Rossi</family>
+    </name>
+    <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1"/>
+    <birthTime value="19800101"/>
+   </patient>
+  </patientRole>
+ </recordTarget>
+ <componentOf>
+  <encompassingEncounter>
+   <encounterParticipant typeCode="ATND">
+    <assignedEntity>
+     <id extension="1234" root="2.16.840.1.113883.19.5"/>
+     <assignedPerson>
+      <name>Dr. Bianchi</name>
+     </assignedPerson>
+    </assignedEntity>
+   </encounterParticipant>
+  </encompassingEncounter>
+ </componentOf>
+ <component>
+  <structuredBody>
+   <component>
+    <section>
+     <title>Storico Clinico</title>
+     <text>Il paziente ha una storia di ipertensione e diabete. È attualmente in terapia per il controllo della glicemia e della pressione sanguigna.</text>
+    </section>
+   </component>
+   <component>
+    <section>
+     <title>Risultati Laboratorio</title>
+     <text>I risultati degli ultimi esami del sangue mostrano valori di glicemia e colesterolo superiori alla norma. </text>
+    </section>
+   </component>
+  </structuredBody>
+ </component>
+</ClinicalDocument>
