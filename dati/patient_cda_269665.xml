@@ -1,0 +1,48 @@
+<ClinicalDocument xmlns="urn:hl7-org:v3">
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <id root="2.16.840.1.113883.3.7764.1.1000"/>
+    <code code="34089-3" displayName="Rapporto del paziente" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    <title>Rapporto medico - Giovanni Rossi</title>
+    <effectiveTime value="20220401"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+    <languageCode code="it-IT"/>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.1234.1.1.1000"/>
+            <addr>
+                <streetAddressLine>Via Stretta 123</streetAddressLine>
+                <city>Roma</city>
+                <state>RM</state>
+                <country>Italia</country>
+                <postalCode>00100</postalCode>
+            </addr>
+            <patient>
+                <name>
+                    <given>Giovanni</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" displayName="Maschile"/>
+                <birthTime value="19800101"/>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <component>
+        <structuredBody>
+            <component>
+                <section>
+                    <code code="46240-8" displayName="Storia clinica" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Storia clinica</title>
+                    <text>Il paziente ha una storia di ipertensione e diabete di tipo 2. È stato anche diagnosticato un cancro al colon lo scorso anno.</text>
+                </section>
+            </component>
+            <component>
+                <section>
+                    <code code="29545-1" displayName="Piani di cura" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                    <title>Piani di cura</title>
+                    <text>Il paziente sta attualmente seguendo una terapia per il cancro al colon composta da chemioterapia e radioterapia.</text>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

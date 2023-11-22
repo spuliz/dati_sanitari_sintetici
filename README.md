@@ -19,13 +19,13 @@ Per configurare questo progetto, seguire questi passaggi:
 2. **Creare un Ambiente Virtuale**
 
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate
    ``` ```
 
 3. **Installare le dipendenze** 
    ```bash
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
  ```  ```
 ## Utilizzo
 Per generare e salvare dati CDA fittizi di pazienti:
@@ -35,11 +35,12 @@ Per generare e salvare dati CDA fittizi di pazienti:
 2. **Eseguire lo Script**: Eseguire lo script principale per generare dati e salvarli nel formato specificato.
 
    ```bash
-   python script.py
+   python3 script.py
  ``` ```
 3. **Struttura delle cartelle**
 ```bash
 ├── dati/ # Cartella dove i file XML generati vengono salvati
+├── templates/ # Cartella dove inserire i file XML dei template per le varie tipologie di documenti loinc
 ├── script.py # Script principale per la generazione e l'elaborazione dei dati
 └── README.md # Documentazione di questo progetto
  ```

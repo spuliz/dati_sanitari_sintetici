@@ -14,7 +14,7 @@ def read_template(file_path):
     with open(file_path, 'r') as file:
         return file.read()
 
-template = read_template('example.xml')
+template = read_template('templates/example.xml')
 
 # Function to generate fake patient CDA data
 def generate_patient_data():
