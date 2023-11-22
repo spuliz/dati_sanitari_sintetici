@@ -59,3 +59,9 @@ Distribuito sotto la Licenza MIT. Vedere `LICENSE` per maggiori informazioni.
 Saverio Pulizzi - [saverio.pulizzi91@gmail.com]
 
 Link del Progetto: [Dati Sanitari Sintetici](https://github.com/spuliz/dati_sanitari_sintetici.git)
+
+## To-do
+- Creare cartella con i vari template di tipo di documenti
+- Inserire parametro tipo di documento (classificazione esiste su loinc): verbale, prescrizione, referto, etc..
+- Influenzare generazione dati in base a distrubuzione patologie 
+- Trasformazione da CDA in FHIR
