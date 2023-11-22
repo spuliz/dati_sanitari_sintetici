@@ -64,5 +64,5 @@ Link del Progetto: [Dati Sanitari Sintetici](https://github.com/spuliz/dati_sani
 ## To-do
 - Creare cartella con i vari template di tipo di documenti
 - Inserire parametro tipo di documento (classificazione esiste su LOINC Document Ontology): verbale, prescrizione, referto, etc..
-- Influenzare generazione dati in base a distrubuzione patologie 
+- Influenzare generazione dati in base a distribuzione patologie 
 - Trasformazione da CDA in FHIR
